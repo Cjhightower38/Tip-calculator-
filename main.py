@@ -18,5 +18,6 @@ tip = float(input('What percenatge of a tip a is the group leaving? '))
 #Use the mathematical formula too find the total including the tip each party member should pay.
 total = ((((tip / 100) * bill) + bill) / people)
 
-#Print the total rounded two decimal places. This answer will show correctly just without the ) at the end.
-print(round(total, 2))
+#Print the total rounded two decimal places using the ('{:.2f}'.format) will still give the two decimal places but this will also display the 2 decimal places including the 0.
+total = "{:.2f}".format(total)
+print(total)
